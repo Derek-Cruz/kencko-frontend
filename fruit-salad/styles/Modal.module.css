@@ -1,0 +1,29 @@
+.StyledModalBody{
+padding-top: 10px;
+}
+
+
+.StyledModalHeader{
+ display: flex;
+justify-content: flex-end;
+font-size: 25px;
+}
+
+
+.StyledModal{
+  border: black solid 2px;
+  background: white;
+  width: 345px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.StyledModalOverlay{
+  position: absolute;
+  top: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

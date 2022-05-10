@@ -6,10 +6,26 @@
 }
 
 .button {
-  border: black solid 1px;
-  width: 78%;
-  height: 40px;
-  border-radius: 20px;
+  border: black solid 2px;
+  width: 83%;
+  height: 47px;
+  border-radius: 25px;
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.buttonOpp {
+  border: black solid 2px;
+  width: 83%;
+  height: 47px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .divTag {
@@ -18,14 +34,29 @@
   justify-content: center;
 }
 
+.div {
+  display: flex;
+  justify-content: center;
+}
+
 .para {
+ padding-left: 10px;
   margin: 0 0 3px;
 }
 
 .head3 {
+  padding-left: 10px;
   margin: 0;
 }
 
 .head4 {
+ padding-left: 10px;
   margin: 0;
+}
+
+.img {
+  height: 24vh;
+  width: 90%;
+  border-radius: 6px;
+  margin-bottom: 15px;
 }

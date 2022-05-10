@@ -1,9 +1,18 @@
-import { useEffect, useState } from 'react';
 import FruitList from "../components/FruitList";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Body from '../components/Body';
 
 function Homepage(props) {
   return (
-    <FruitList fruits={props.fruits} />
+    <div>
+      <Header />
+      <div id="modal-root"></div>
+      <Body />
+      <FruitList fruits={props.fruits} />
+      <Footer />
+    </div>
+
   )
 }
 

@@ -1,0 +1,31 @@
+.list {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.button {
+  border: black solid 1px;
+  width: 78%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.divTag {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.para {
+  margin: 0 0 3px;
+}
+
+.head3 {
+  margin: 0;
+}
+
+.head4 {
+  margin: 0;
+}

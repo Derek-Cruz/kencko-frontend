@@ -8,7 +8,17 @@ function FruitItem(props) {
   const { fruits, addFruit } = useFruitsStore()
 
   function handleClick() {
-    addFruit([...fruits, ]);
+    let newFruit = {};
+    newFruit = {
+      name: props.name,
+      family: props.family,
+      calories: props.calories,
+      carbohydrates: props.carbohydrates,
+      protein: props.protein,
+      fat: props.fat,
+      sugar: props.sugar
+    };
+    addFruit(newFruit)
   }
 
   return (

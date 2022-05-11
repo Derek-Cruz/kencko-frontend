@@ -1,8 +1,10 @@
 .div {
   display: flex;
   background-color: #feb3a1;
-  height: 140px;
+  height: 198px;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-left: 22px;
+  font-size: 1.14rem;
 }

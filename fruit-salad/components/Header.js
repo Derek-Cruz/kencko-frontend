@@ -1,23 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import classes from '../styles/Header.module.css';
-
 // import { useFruitsStore } from './useFruitsStore'
-// const { fruits, addFruit } = useFruitsStore()
+
 
 function Header(props) {
   const [showModal, setShowModal] = useState(false);
+  // const { fruits, addFruit } = useFruitsStore()
 
   return (
     <div className={classes.div}>
-      <div>fruit salad</div>
+      <div className={classes.title}>fruit salad</div>
       <div>
         <button onClick={() => setShowModal(true)}>Open Modal</button>
         <Modal
           onClose={() => setShowModal(false)}
           show={showModal}
         >
-          <div>testing</div>
+          <ul>
+
+          </ul>
         </Modal>
       </div>
     </div>

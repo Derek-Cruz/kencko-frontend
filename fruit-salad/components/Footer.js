@@ -4,7 +4,7 @@ function Footer(props) {
   return (
     <div className={classes.div}>
       <div>@ 2021, fruit salad inc</div>
-      <div><a>read me</a></div>
+      <div><a href="https://www.fruityvice.com/">read me</a></div>
       <div>follow us</div>
       <div>test</div>
     </div>

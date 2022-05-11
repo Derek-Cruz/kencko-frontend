@@ -7,4 +7,10 @@
   align-items: center;
   position: fixed;
   top: 0px;
+  padding: 0 25px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.08rem;
 }

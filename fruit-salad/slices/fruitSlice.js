@@ -5,16 +5,7 @@ export const fruitSlice = createSlice({
   initialState: [],
   reducers: {
     addFruit: (state, action) => {
-      const newFruit = {
-        name: action.payload.name,
-        family: action.payload.family,
-        calories: action.payload.calories,
-        carbohydrates: action.payload.carbohydrates,
-        protein: action.payload.protein,
-        fat: action.payload.fat,
-        sugar: action.payload.sugar,
-      };
-      state.push(newFruit);
+      state.push(action.payload)
     }
   }
 });

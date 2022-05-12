@@ -1,18 +1,17 @@
 import Card from './Card';
-import { useState } from 'react';
 import classes from '../styles/FruitItem.module.css';
 import { useDispatch } from 'react-redux'
 import { addFruit } from '../slices/fruitSlice'
 
 function FruitItem(props) {
-  const [value, setValue] = useState();
 
   const dispatch = useDispatch();
 
   function handleClick() {
+    console.log('i was clicked')
     dispatch(
       addFruit({
-        name: value,
+        name: props.name,
         family: props.family,
         calories: props.calories,
         carbohydrates: props.carbohydrates,
@@ -39,7 +38,7 @@ function FruitItem(props) {
           <p className={classes.para}>{props.sugar} sugar</p>
         </div>
         <div className={classes.divTag}>
-          <button onClick={handleClick} className={classes.button}>ADD ME!</button>
+          <button onClick={() => handleClick()} className={classes.button}>ADD ME!</button>
         </div>
       </Card>
     </li>

@@ -1,25 +1,27 @@
 import Card from './Card';
-import { useFruitsStore } from './useFruitsStore'
 import { useState } from 'react';
 import classes from '../styles/FruitItem.module.css';
-
+import { useDispatch } from 'react-redux'
+import { addFruit } from '../slices/fruitSlice'
 
 function FruitItem(props) {
-  const { fruits, addFruit } = useFruitsStore()
+  const [value, setValue] = useState();
+
+  const dispatch = useDispatch();
 
   function handleClick() {
-    let newFruit = {};
-    newFruit = {
-      name: props.name,
-      family: props.family,
-      calories: props.calories,
-      carbohydrates: props.carbohydrates,
-      protein: props.protein,
-      fat: props.fat,
-      sugar: props.sugar
-    };
-    addFruit(newFruit)
-  }
+    dispatch(
+      addFruit({
+        name: value,
+        family: props.family,
+        calories: props.calories,
+        carbohydrates: props.carbohydrates,
+        protein: props.protein,
+        fat: props.fat,
+        sugar: props.sugar
+      })
+    );
+  };
 
   return (
     <li className={classes.list}>

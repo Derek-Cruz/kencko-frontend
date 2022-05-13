@@ -18,3 +18,8 @@ function Body(props) {
 }
 
 export default Body;
+
+
+// if (fruit.family === 'rosaceae') {
+//   fruit[Math.floor((Math.random() * fruit.length))]
+// }

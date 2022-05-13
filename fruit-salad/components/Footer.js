@@ -6,7 +6,9 @@ function Footer(props) {
       <div>@ 2021, fruit salad inc</div>
       <div><a href="https://www.fruityvice.com/">read me</a></div>
       <div>follow us</div>
-      <div>test</div>
+      <div>
+
+      </div>
     </div>
   );
 }

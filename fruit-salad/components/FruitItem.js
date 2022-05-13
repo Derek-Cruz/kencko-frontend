@@ -8,7 +8,6 @@ function FruitItem(props) {
   const dispatch = useDispatch();
 
   function handleClick() {
-    console.log('i was clicked')
     dispatch(
       addFruit({
         name: props.name,
@@ -17,7 +16,8 @@ function FruitItem(props) {
         carbohydrates: props.carbohydrates,
         protein: props.protein,
         fat: props.fat,
-        sugar: props.sugar
+        sugar: props.sugar,
+        key: props.id
       })
     );
   };

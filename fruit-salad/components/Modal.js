@@ -1,9 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import classes from '../styles/Modal.module.css';
+import { useSelector } from 'react-redux';
+
 
 const Modal = ({ show, onClose, children }) => {
   const [isBrowser, setIsBrowser] = useState(false);
+  const fruits = useSelector((state) => state.fruit);
 
   useEffect(() => {
     setIsBrowser(true);
@@ -15,14 +18,14 @@ const Modal = ({ show, onClose, children }) => {
   };
 
   const modalContent = show ? (
-    <div className={classes.StyledModalOverlay}>
-      <div className={classes.StyledModal}>
-        <div className={classes.StyledModalHeader}>
-          <a href="#" onClick={handleCloseClick}>
+    <div className={classes.overlay}>
+      <div className={classes.modal}>
+        <div className={classes.header}>
+          <a href="#" onClick={handleCloseClick} className={classes.a}>
             x
           </a>
         </div>
-        <div className={classes.StyledModalBody}>{children}</div>
+        <div className={classes.body}>{children}</div>
       </div>
     </div>
   ) : null;

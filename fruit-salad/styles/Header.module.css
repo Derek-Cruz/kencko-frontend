@@ -35,3 +35,39 @@
 .li {
   font-size: 1.1rem;
 }
+
+.button {
+  line-height: 21px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 481px) {
+  .div {
+    right: 0px;
+    padding: 0 1%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .div {
+    right: 0px;
+    padding: 0 4%;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .div {
+    right: 0px;
+    padding: 0 7%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+  .div {
+    right: 0px;
+    padding: 0 8%;
+  }
+}

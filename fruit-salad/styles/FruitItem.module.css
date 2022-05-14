@@ -40,7 +40,8 @@
 }
 
 .para {
- padding-left: 10px;
+  display: flex;
+  padding-left: 10px;
   margin: 0 0 3px;
   font-weight: 600;
 }
@@ -62,4 +63,60 @@
   width: 90%;
   border-radius: 6px;
   margin-bottom: 15px;
+}
+
+.span {
+  display: flex;
+  justify-content: flex-start;
+  width: 31px;
+  font-size: 0.8rem;
+  line-height: 22px;
+}
+
+
+@media screen and (min-width: 481px) {
+  .list {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .list {
+    width: 33%;
+  }
+
+  .img {
+    width: 100%;
+    height: 16vh;
+  }
+
+  .button {
+    height: 40px;
+    font-size: 0.7rem;
+  }
+
+  .buttonOpp {
+    height: 40px;
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .list {
+    width: 25%;
+  }
+
+  .img {
+    height: 15vh;
+  }
+
+  .button {
+    height: 35px;
+    font-size: 0.6rem;
+  }
+
+  .buttonOpp {
+    height: 35px;
+    font-size: 0.6rem;
+  }
 }

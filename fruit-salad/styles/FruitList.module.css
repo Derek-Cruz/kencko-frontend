@@ -5,3 +5,9 @@
   padding: 0;
   margin: 42px 15px 0;
 }
+
+@media screen and (min-width: 1025px) {
+  .ul {
+    margin: 35px 0 0;
+  }
+}

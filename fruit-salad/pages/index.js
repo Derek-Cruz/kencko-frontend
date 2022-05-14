@@ -3,11 +3,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Body from '../components/Body';
 import Head from 'next/head'
+import classes from '../styles/Index.module.css'
 
 
 function Homepage(props) {
   return (
-    <div>
+    <div className={classes.container}>
       <Head>
         <title>Kencko salad maker</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />

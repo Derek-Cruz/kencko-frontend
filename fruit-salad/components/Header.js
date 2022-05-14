@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import classes from '../styles/Header.module.css';
 import { useSelector } from 'react-redux';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLemon } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -19,7 +21,7 @@ function Header(props) {
     <div className={classes.div}>
       <div className={classes.title}>fruit salad</div>
       <div>
-        <button onClick={() => fruits.length >= 3 ? setShowModal(true) : setShowModal(false)}>Open Modal</button>
+        <button className={classes.button} onClick={() => fruits.length >= 3 ? setShowModal(true) : setShowModal(false)}><FontAwesomeIcon icon={faLemon} /></button>
         <Modal
           onClose={() => setShowModal(false)}
           show={showModal}

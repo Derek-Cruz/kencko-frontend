@@ -1,10 +1,85 @@
 .div {
   display: flex;
   background-color: #feb3a1;
-  height: 198px;
+  height: 205px;
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-evenly;
   padding-left: 22px;
   font-size: 1.14rem;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.divTwo {
+  display: flex;
+  width: 90px;
+  justify-content: space-between;
+
+}
+
+.icon {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.a {
+  text-decoration: underline;
+}
+
+.footerDivOne {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footerDivTwo {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 481px) {
+  .footerDivOne {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .div {
+    flex-direction: row;
+    padding-top: 42px;
+    height: 150px;
+  }
+
+  .footerDivOne {
+    flex-direction: row;
+    width: 72%;
+  }
+
+  .footerDivTwo {
+    width: 13%;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .div {
+    flex-direction: row;
+    padding-top: 42px;
+    height: 150px;
+  }
+
+  .footerDivOne {
+    flex-direction: row;
+    width: 72%;
+  }
+
+  .footerDivTwo {
+    width: 13%;
+    height: 70px;
+  }
 }

@@ -1,0 +1,73 @@
+.div {
+  width: 100%;
+  display: flex;
+  background-color: #feb3a1;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  padding: 0 25px;
+  z-index: 1;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+
+.h2 {
+  margin: 0 0 5px;
+  font-size: 1.2rem;
+}
+
+.ul {
+  margin: 0 0 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.li {
+  font-size: 1.1rem;
+}
+
+.button {
+  line-height: 21px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3rem;
+}
+
+@media screen and (min-width: 481px) {
+  .div {
+    right: 0px;
+    padding: 0 1%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .div {
+    right: 0px;
+    padding: 0 4%;
+  }
+}
+
+
+@media screen and (min-width: 1025px) {
+  .div {
+    right: 0px;
+    padding: 0 7%;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 3000px) {
+  .div {
+    right: 0px;
+    padding: 0 8%;
+  }
+}
